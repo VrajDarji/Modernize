@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ["modernize-angular-main.netlify.app"],
+  },
+};
 
 export default nextConfig;
