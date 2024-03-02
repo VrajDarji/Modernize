@@ -39,7 +39,6 @@ const Sidebar = () => {
             <button className="h-10 flex justify-center items-center aspect-square rounded-full hover:bg-[rgba(0,0,0,0.05)]">
               <Power color="#678FFF" size={18} />
             </button>
-            S
           </div>
         </div>
       </div>

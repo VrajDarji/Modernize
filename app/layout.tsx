@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Container from "@/components/Container";
-const inter = Inter({ subsets: ["latin"] });
+import ModalProvider from "@/provider/ModalProvider";
+const inter = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Sidebar />
         <Container>{children}</Container>
+        <ModalProvider />
       </body>
     </html>
   );
